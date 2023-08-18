@@ -1,13 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>OTTclub</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/logo.png"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <script src="./scripts/main.js" defer></script>
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <nav class="header__nav">
+            <a href="/" class="header__logo">
+              <img
+                src="./images/logo.png"
+                alt="OTTclub logo"
+                class="header__logo-image"
+              >
+            </a>
+
+            <div class="header__right-menu">
+              <div class="header__socials">
+                <a href="https://t.me/maksimkadygrob" class="header__socials-link">
+                  <img
+                    src="./images/telegram.svg"
+                    alt="telegram link"
+                  >
+                </a>
+
+                <a href="https://github.com/MaksimKad" class="header__socials-link">
+                  <img
+                    src="./images/github.svg"
+                    alt="github link"
+                  >
+                </a>
+              </div>
+
+              <div class="header__authorization">
+                <a href="https://www.ottclub.tv/info/regform/" class="header__sign-up">
+                  Регистрация
+                </a>
+
+                <a href="https://www.ottclub.tv/info/logform/" class="header__sign-in">
+                  Войти
+                </a>
+              </div>
+            </div>
+          </nav>
+
+          <section class="trial">
+            <div class="container">
+              <div class="trial__content">
+                <div class="trial__about">
+                  <h1 class="trial__title">
+                    Более 270 телеканалов<br>в прямом эфире
+                  </h1>
+
+                  <img
+                    src="./images/header-image.webp"
+                    alt="channels image"
+                    class="trial__image"
+                  >
+
+                  <p class="trial__text">
+                    Национальные, познавательные, детские, кино, спортивные,
+                    новостные и многие другие каналы
+                  </p>
+
+                  <button class="trial__button">
+                    Протестировать 7 дней бесплатно
+                  </button>
+                </div>
+
+                <img
+                  src="./images/header-image.webp"
+                  alt="channels image"
+                  class="trial__large-image"
+                >
+              </div>
+            </div>
+          </section>
+
+          <section class="benefits">
+            <div class="container">
+              <div class="benefits__content">
+                <div class="benefits__item">
+                  <img
+                    src="./images/benefits/benefit-gift.svg"
+                    alt="gift image"
+                    class="benefits__image"
+                  >
+                  <h4 class="benefits__title">
+                    Бесплатный тест
+                  </h4>
+
+                  <p class="benefits__text">
+                    7 дней бесплатного тестового просмотра
+                  </p>
+                </div>
+
+                <div class="benefits__item">
+                  <img
+                    src="./images/benefits/benefit-devices.svg"
+                    alt="devices image"
+                    class="benefits__image"
+                  >
+                  <h4 class="benefits__title">
+                    5 устройств = 1 подписка
+                  </h4>
+
+                  <p class="benefits__text">
+                    Подключайте 5 устройств в одной подписке
+                  </p>
+                </div>
+
+                <div class="benefits__item">
+                  <img
+                    src="./images/benefits/benefit-tv.svg"
+                    alt="tv image"
+                    class="benefits__image"
+                  >
+                  <h4 class="benefits__title">
+                    Архив трансляций
+                  </h4>
+
+                  <p class="benefits__text">
+                    Смотрите 7 дней телеэфира в записи
+                  </p>
+                </div>
+
+                <div class="benefits__item">
+                  <img
+                    src="./images/benefits/benefit-planet.svg"
+                    alt="planet image"
+                    class="benefits__image"
+                  >
+                  <h4 class="benefits__title">
+                    Без привязки к месту
+                  </h4>
+
+                  <p class="benefits__text">
+                    Смотрите любимые фильмы и передачи в любой точке мира
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
+
