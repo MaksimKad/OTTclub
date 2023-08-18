@@ -1,0 +1,101 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  padding-bottom: 8px;
+
+  @include onTablet768 {
+    padding: 40px 23px;
+  }
+
+  @include onTablet990 {
+    padding: 48px 23px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+    width: auto;
+  }
+
+  &__logo-image {
+    width: 56px;
+
+    @include onTablet768 {
+      width: 64px;
+    }
+
+    @include onTablet990 {
+      width: 72px;
+    }
+
+    @include onDesktop {
+      width: 96px;
+    }
+  }
+
+  &__right-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  &__socials {
+    display: none;
+
+    @include onTablet768 {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      align-items: center;
+    }
+  }
+
+  &__socials-link {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__authorization {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__sign-up {
+    display: none;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-decoration: none;
+    opacity: $default-opacity;
+
+    @include onTablet768 {
+      display: block;
+    }
+  }
+
+  &__sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 24px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    background: transparent;
+
+    @include onDesktop {
+      padding: 16px 32px;
+    }
+  }
+}
