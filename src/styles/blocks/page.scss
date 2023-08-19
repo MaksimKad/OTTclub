@@ -1,6 +1,33 @@
 .page {
+  overflow-x: hidden;
   &__body {
-    background-color: #120011;
+    background-image: url("../images/background/375.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
     overflow-x: hidden;
+    padding: 0 16px;
+
+    @include onTablet768 {
+      background-image: url("../images/background/768.jpg");
+      padding: 0 23px;
+    }
+
+    @include onTablet990 {
+      background-image: url("../images/background/990.jpg");
+      background-size: 110%;
+      padding: 0 23px;
+    }
+
+    @include onLaptop {
+      background-image: url("../images/background/1440.jpg");
+      background-size: 100%;
+      padding: 0 23px;
+    }
+
+    @include onDesktop {
+      background-image: url("../images/background/1920.jpg");
+      padding: 0 23px;
+    }
   }
 }
