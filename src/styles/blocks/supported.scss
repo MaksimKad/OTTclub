@@ -1,0 +1,61 @@
+.supported {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 140px;
+  width: 100%;
+}
+
+.supported__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 0;
+
+  @include onTablet990 {
+    padding: 32px 0;
+  }
+
+  @include onLaptop {
+    gap: 32px;
+    padding: 48px 0;
+  }
+
+  @include onDesktop {
+    padding: 60px 0;
+  }
+}
+
+.supported__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include onTablet990 {
+    align-items: start;
+  }
+}
+
+.supported__image {
+  display: block;
+  min-width: 148px;
+  margin-bottom: 12px;
+  flex-grow: 1;
+
+  @include onTablet990 {
+    width: 64px;
+    margin-bottom: 20px;
+  }
+
+  @include onLaptop {
+    width: 72px;
+    margin-bottom: 24px;
+  }
+
+  @include onDesktop {
+    width: 96px;
+    margin-bottom: 32px;
+  }
+}

@@ -4,6 +4,7 @@
   position: relative;
   flex-direction: column;
   width: 100%;
+  padding: 16px 0;
 
   @include onTablet768 {
     flex-direction: row;
@@ -107,13 +108,17 @@
     width: 60%;
   }
 
+  @include onTablet990 {
+    width: 50%;
+  }
+
   @include onLaptop {
     left: 50%;
   }
 
   @include onDesktop {
-    left: 43%;
-    width: 65%;
+    left: 50%;
+    width: 63%;
   }
 }
 
@@ -149,18 +154,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  margin: auto;
   font-size: 17px;
   padding: 16px 24px;
   border-radius: 5px;
+  text-decoration: none;
   color: #fff;
   background-color: #fc3232;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all $default-transition ease-in-out;
 
   &:hover {
-    opacity: $default-opacity;
+    background-color: transparent;
+    border: 2px solid #fc3232;
+    box-shadow: 1px 4px 16px 0 rgba(241, 53, 56, 0.64);
   }
 
   @include onTablet768 {
+    margin: 0;
     max-width: fit-content;
   }
 
@@ -172,107 +184,5 @@
   @include onDesktop {
     font-size: 26px;
     padding: 24px 40px;
-  }
-}
-
-.benefits {
-  display: none;
-  width: 100%;
-
-  @include onTablet768 {
-    display: block;
-  }
-}
-
-.benefits__content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 24px;
-  padding: 24px 0;
-
-  @include onTablet990 {
-    padding: 32px 0;
-  }
-
-  @include onLaptop {
-    gap: 32px;
-    padding: 48px 0;
-  }
-
-  @include onDesktop {
-    padding: 60px 0;
-  }
-}
-
-.benefits__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @include onTablet990 {
-    align-items: start;
-  }
-}
-
-.benefits__image {
-  display: block;
-  width: 48px;
-  margin-bottom: 12px;
-
-  @include onTablet990 {
-    width: 64px;
-    margin-bottom: 20px;
-  }
-
-  @include onLaptop {
-    width: 72px;
-    margin-bottom: 24px;
-  }
-
-  @include onDesktop {
-    width: 96px;
-    margin-bottom: 32px;
-  }
-}
-
-.benefits__title {
-  text-align: center;
-  color: #fff;
-  margin: 0;
-  max-width: 130px;
-
-  @include onTablet990 {
-    text-align: start;
-    max-width: none;
-    margin-bottom: 16px;
-  }
-
-  @include onLaptop {
-    margin-bottom: 12px;
-  }
-
-  @include onDesktop {
-    margin-bottom: 16px;
-  }
-}
-
-.benefits__text {
-  display: none;
-  opacity: $default-opacity;
-  color: #fff;
-  margin: 0;
-
-  @include onTablet990 {
-    display: inline;
-    max-width: 200px;
-  }
-
-  @include onLaptop {
-    max-width: 250px;
-  }
-
-  @include onDesktop {
-    max-width: 300px;
   }
 }

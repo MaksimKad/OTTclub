@@ -2,23 +2,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
-  padding-bottom: 8px;
-
-  @include onTablet768 {
-    padding: 40px 23px;
-  }
-
-  @include onTablet990 {
-    padding: 48px 23px;
-  }
 
   &__nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 8px;
     width: auto;
+
+    @include onTablet768 {
+      padding: 23px 0;
+    }
+
+    @include onDesktop {
+      padding: 30px 0;
+    }
   }
 
   &__logo-image {
@@ -67,17 +66,56 @@
   }
 
   &__sign-up {
+    align-self: flex-end;
+    text-align: center;
     display: none;
     color: #fff;
     font-size: 16px;
     font-style: normal;
+    padding-bottom: 10px;
+    margin-bottom: 9px;
     font-weight: 600;
     line-height: 140%;
     text-decoration: none;
     opacity: $default-opacity;
+    position: relative;
+    overflow: hidden;
+    transition: opacity $default-transition;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      background: #fff;
+      left: 45%;
+      height: 1px;
+      bottom: 0;
+      transition: all $default-transition;
+      opacity: 1;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:hover:before {
+      width: 100%;
+      left: 0;
+    }
 
     @include onTablet768 {
       display: block;
+    }
+
+    @include onTablet990 {
+      padding-bottom: 10px;
+      margin-bottom: 13px;
+    }
+
+    @include onDesktop {
+      padding-bottom: 16px;
+      margin-bottom: 19px;
     }
   }
 
@@ -93,6 +131,13 @@
     border: 2px solid #fff;
     text-decoration: none;
     background: transparent;
+    transition: all $default-transition ease-in-out;
+
+    &:hover {
+      color: black;
+      background-color: #fff;
+      box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.64);
+    }
 
     @include onDesktop {
       padding: 16px 32px;

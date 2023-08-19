@@ -3,6 +3,10 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  max-width: 1496px;
+  max-width: 1096px;
   margin: 0 auto;
+
+  @include onDesktop {
+    max-width: 1496px;
+  }
 }
