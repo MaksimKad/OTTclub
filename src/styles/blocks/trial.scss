@@ -4,24 +4,24 @@
   position: relative;
   flex-direction: column;
   width: 100%;
-  padding: 16px 0;
+  padding-bottom: 16px;
 
   @include onTablet768 {
     flex-direction: row;
-    padding: 48px 0;
+    padding-bottom: 48px;
     align-items: start;
   }
 
   @include onTablet990 {
-    padding: 48px 0 58px;
+    padding-bottom: 58px;
   }
 
   @include onLaptop {
-    padding: 56px 0 141px;
+    padding-bottom: 141px;
   }
 
   @include onDesktop {
-    padding: 70px 0 194px;
+    padding-bottom: 194px;
   }
 
   &__content {

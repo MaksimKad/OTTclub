@@ -1,3 +1,9 @@
+@mixin onPhone375 {
+  @media (min-width: 375px) {
+    @content;
+  }
+}
+
 @mixin onTablet768 {
   @media (min-width: 768px) {
     @content;

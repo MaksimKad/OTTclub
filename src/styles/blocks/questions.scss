@@ -6,29 +6,79 @@
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
+    opacity: 0.9;
 
     @include onTablet768 {
       text-align: left;
+      font-size: 30px;
+    }
+
+    @include onTablet990 {
+      font-size: 36px;
+    }
+
+    @include onLaptop {
+      font-size: 40px;
+    }
+
+    @include onDesktop {
+      font-size: 52px;
+    }
+  }
+
+  &__container {
+    display: block;
+
+    @include onTablet768 {
+      display: flex;
+      width: fit-content;
+      gap: 24px;
+    }
+
+    @include onTablet990 {
+      gap: 32px;
+    }
+
+    @include onLaptop {
+      gap: 24px;
+    }
+
+    @include onDesktop {
+      gap: 24px;
     }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 24px;
     padding: 0;
+    flex-grow: 0;
   }
 
   &__item {
     display: flex;
     justify-content: space-between;
+    gap: 50px;
     padding-bottom: 20px;
     border-bottom: 1px solid #606060;
 
-    &:last-child {
+    &--last {
       border-bottom: none;
       padding-bottom: 0;
+    }
+
+    @include onTablet768 {
+      height: 3rem;
+      
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+
+    @include onDesktop {
+      height: 5rem;
     }
   }
 
@@ -38,6 +88,20 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
+    word-break: keep-all;
+
+    @include onTablet990 {
+      font-size: 18px;
+    }
+
+    @include onDesktop {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  &__answer {
+    display: none;
   }
 
   &__img {
