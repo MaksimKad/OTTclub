@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 'use strict';
 
 const container = document.getElementById('scrollable-container');
@@ -29,4 +30,22 @@ container.addEventListener('mousemove', (event) => {
   const walk = (x - startX);
 
   container.scrollLeft = scrollLeft - walk;
+});
+
+const questionItems = document.querySelectorAll('.questions__item');
+
+questionItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('questions__item--active');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const emailInput = document.querySelector('.subscription__input');
+  const form = document.querySelector('.subscription__email');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    emailInput.value = '';
+  });
 });
