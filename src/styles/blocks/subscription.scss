@@ -1,5 +1,5 @@
 .subscription {
-  border: 2px solid red;
+  border: 2px solid $primary-red;
   border-radius: 20px;
   width: 100%;
   margin: auto;
@@ -65,7 +65,7 @@
     align-items: flex-end;
     justify-content: center;
     background: #131313;
-    border: 2px solid red;
+    border: 2px solid $primary-red;
     border-bottom: 0;
     border-top-left-radius: calc(3.75 * var(--size));
     border-top-right-radius: calc(3.75 * var(--size));
@@ -139,7 +139,7 @@
   }
 
   &__price {
-    color: #fff;
+    color: $white;
     text-align: center;
     font-size: 15px;
     font-style: normal;
@@ -160,7 +160,7 @@
 
   &__value {
     display: inline-block;
-    color: #ff1f1f;
+    color: $primary-red;
     font-size: 67px;
     font-style: normal;
     font-weight: 600;
@@ -206,7 +206,7 @@
   }
 
   &__text {
-    color: #fff;
+    color: $white;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -248,8 +248,9 @@
   &__input {
     display: flex;
     padding: 15px 16px;
+    width: 100%;
     border-radius: 5px;
-    border: 1px solid #d0d0d1;
+    border: 1px solid $white;
     box-sizing: border-box;
     flex: 1.5;
     outline: none;
@@ -265,22 +266,23 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    width: 100%;
+    box-sizing: border-box;
     font-size: 17px;
     padding: 16px 24px;
     border-radius: 5px;
     margin-bottom: 16px;
     text-decoration: none;
     color: #fff;
-    background-color: #fc3232;
+    background-color: $primary-red;
     cursor: pointer;
     border: 2px solid transparent;
     transition: all $default-transition ease-in-out;
-    width: 100%;
     flex: 1;
 
     &:hover {
       background-color: transparent;
-      border: 2px solid #fc3232;
+      border: 2px solid $primary-red;
       box-shadow: 1px 4px 16px 0 rgba(241, 53, 56, 0.64);
     }
 

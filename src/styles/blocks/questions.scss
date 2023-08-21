@@ -6,7 +6,7 @@
   }
 
   &__title {
-    color: #fff;
+    color: $white;
     text-align: center;
     font-size: 24px;
     font-style: normal;
@@ -64,7 +64,7 @@
 
   &__item {
     padding-bottom: 20px;
-    border-bottom: 1px solid #606060;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
     cursor: pointer;
 
     &--last {
@@ -97,7 +97,7 @@
   }
 
   &__text {
-    color: #fff;
+    color: $white;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -117,7 +117,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-    color: #fff;
+    color: $white;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -136,7 +136,7 @@
   }
 
   &__item--active &__question {
-    text-shadow: #fff 1px 0 10px;
+    text-shadow: $white 1px 0 10px;
   }
 
   &__item--active &__img {

@@ -5,7 +5,7 @@
 
   &__content {
     padding: 48px 0;
-    border-top: 1px solid #606060;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
 
     @include onPhone375 {
       padding: 64px 0;
@@ -44,7 +44,7 @@
   }
 
   &__link {
-    color: #fff;
+    color: $white;
     font-size: 14px;
     font-style: normal;
     text-decoration: none;
@@ -55,7 +55,7 @@
 
     &:hover {
       opacity: 1;
-      text-shadow: #fff 1px 0 10px;
+      text-shadow: $white 1px 0 10px;
     }
   }
 
@@ -82,7 +82,7 @@
 
   &__contacts-title {
     margin: 0;
-    color: #fff;
+    color: $white;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;

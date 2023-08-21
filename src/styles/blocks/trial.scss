@@ -16,11 +16,11 @@
   }
 
   @include onLaptop {
-    padding-bottom: 141px;
+    padding-bottom: 140px;
   }
 
   @include onDesktop {
-    padding-bottom: 194px;
+    padding-bottom: 164px;
   }
 
   &__container {
@@ -42,6 +42,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     @include onTablet768 {
       align-items: flex-start;
@@ -67,7 +68,7 @@
     font-weight: 600;
     line-height: 120%;
     margin: 0;
-    color: #fff;
+    color: $white;
 
     @include onTablet768 {
       font-size: 32px;
@@ -129,7 +130,7 @@
     width: 100%;
     opacity: $default-opacity;
     margin-bottom: 32px;
-    color: #fff;
+    color: $white;
     max-width: 340px;
 
     @include onTablet768 {
@@ -156,20 +157,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
     font-size: 17px;
     padding: 16px 24px;
     border-radius: 5px;
     text-decoration: none;
-    color: #fff;
-    background-color: #fc3232;
+    color: $white;
+    background-color: $primary-red;
     cursor: pointer;
     border: 2px solid transparent;
     transition: all $default-transition ease-in-out;
 
     &:hover {
       background-color: transparent;
-      border: 2px solid #fc3232;
+      border: 2px solid $primary-red;
       box-shadow: 1px 4px 16px 0 rgba(241, 53, 56, 0.64);
     }
 
