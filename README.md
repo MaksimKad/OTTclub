@@ -1,7 +1,7 @@
 # OTTclub layout Test task
 
 - [DEMO LINK](https://maksimkad.github.io/OTTclub/)
-- [FIGMA MOCKUP](bit.ly/454SwRB)
+- [FIGMA MOCKUP](https://www.figma.com/file/zmoUQbLjiPhVIdQWrNbRTH/%5BOTTCLUB%5D-%D0%A2%D0%95%D0%A1%D0%A2%D0%9E%D0%92%D0%9E%D0%95-%D0%97%D0%90%D0%94%D0%90%D0%9D%D0%98%D0%95?)
 
 # Features
 - Responsive design for optimal viewing on different devices.
