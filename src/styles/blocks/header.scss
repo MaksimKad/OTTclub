@@ -2,6 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 100px;
+
+  &__container {
+    @extend %container;
+  }
 
   &__nav {
     display: flex;
@@ -9,13 +14,24 @@
     justify-content: space-between;
     padding-top: 16px;
     padding-bottom: 8px;
+    margin-bottom: 16px;
     width: auto;
 
+    @include onPhone375 {
+      margin-bottom: 24px;
+    }
+
     @include onTablet768 {
+      margin-bottom: 28px;
       padding: 23px 0;
     }
 
+    @include onLaptop {
+      margin-bottom: 34px;
+    }
+
     @include onDesktop {
+      margin-bottom: 72px;
       padding: 30px 0;
     }
   }
@@ -55,7 +71,12 @@
 
   &__socials-link {
     width: 24px;
-    height: 24px;
+    opacity: $default-opacity;
+    transition: opacity $default-transition ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &__authorization {
@@ -69,7 +90,7 @@
     align-self: flex-end;
     text-align: center;
     display: none;
-    color: #fff;
+    color: $white;
     font-size: 16px;
     font-style: normal;
     padding-bottom: 10px;
@@ -87,7 +108,7 @@
       content: "";
       position: absolute;
       width: 0;
-      background: #fff;
+      background: $white;
       left: 45%;
       height: 1px;
       bottom: 0;
@@ -127,15 +148,15 @@
     padding: 11px 24px;
     border-radius: 5px;
     font-weight: 500;
-    color: #fff;
-    border: 2px solid #fff;
+    color: $white;
+    border: 2px solid $white;
     text-decoration: none;
     background: transparent;
     transition: all $default-transition ease-in-out;
 
     &:hover {
       color: black;
-      background-color: #fff;
+      background-color: $white;
       box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.64);
     }
 

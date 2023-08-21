@@ -5,97 +5,101 @@
   @include onTablet768 {
     display: block;
   }
-}
 
-.benefits__content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 24px;
-  padding: 24px 0 41px;
-
-  @include onTablet990 {
-    padding: 32px 0;
+  &__container {
+    @extend %container;
   }
 
-  @include onLaptop {
-    gap: 32px;
-    padding: 48px 0 56px;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 24px 0 41px;
+
+    @include onTablet990 {
+      padding: 32px 0;
+    }
+
+    @include onLaptop {
+      gap: 32px;
+      padding: 48px 0 56px;
+    }
+
+    @include onDesktop {
+      padding: 60px 0 80px;
+    }
   }
 
-  @include onDesktop {
-    padding: 60px 0 80px;
-  }
-}
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.benefits__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @include onTablet990 {
-    align-items: start;
-  }
-}
-
-.benefits__image {
-  display: block;
-  width: 48px;
-  margin-bottom: 12px;
-
-  @include onTablet990 {
-    width: 64px;
-    margin-bottom: 20px;
+    @include onTablet990 {
+      align-items: start;
+    }
   }
 
-  @include onLaptop {
-    width: 72px;
-    margin-bottom: 24px;
-  }
-
-  @include onDesktop {
-    width: 96px;
-    margin-bottom: 32px;
-  }
-}
-
-.benefits__title {
-  text-align: center;
-  color: #fff;
-  margin: 0;
-  max-width: 130px;
-
-  @include onTablet990 {
-    text-align: start;
-    max-width: none;
-    margin-bottom: 16px;
-  }
-
-  @include onLaptop {
+  &__image {
+    display: block;
+    width: 48px;
     margin-bottom: 12px;
+
+    @include onTablet990 {
+      width: 64px;
+      margin-bottom: 20px;
+    }
+
+    @include onLaptop {
+      width: 72px;
+      margin-bottom: 24px;
+    }
+
+    @include onDesktop {
+      width: 96px;
+      margin-bottom: 32px;
+    }
   }
 
-  @include onDesktop {
-    margin-bottom: 16px;
+  &__title {
+    text-align: center;
+    color: $white;
+    margin: 0;
+    max-width: 130px;
+
+    @include onTablet990 {
+      text-align: start;
+      max-width: none;
+      margin-bottom: 16px;
+    }
+
+    @include onLaptop {
+      margin-bottom: 12px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 16px;
+    }
   }
-}
 
-.benefits__text {
-  display: none;
-  opacity: $default-opacity;
-  color: #fff;
-  margin: 0;
+  &__text {
+    display: none;
+    opacity: $default-opacity;
+    color: #fff;
+    margin: 0;
 
-  @include onTablet990 {
-    display: inline;
-    max-width: 200px;
-  }
+    @include onTablet990 {
+      display: inline;
+      max-width: 200px;
+    }
 
-  @include onLaptop {
-    max-width: 250px;
-  }
+    @include onLaptop {
+      max-width: 250px;
+    }
 
-  @include onDesktop {
-    max-width: 300px;
+    @include onDesktop {
+      max-width: 300px;
+    }
   }
 }

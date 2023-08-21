@@ -4,24 +4,27 @@
   position: relative;
   flex-direction: column;
   width: 100%;
-  padding: 16px 0;
 
   @include onTablet768 {
     flex-direction: row;
-    padding: 48px 0;
+    padding-bottom: 48px;
     align-items: start;
   }
 
   @include onTablet990 {
-    padding: 48px 0 58px;
+    padding-bottom: 58px;
   }
 
   @include onLaptop {
-    padding: 56px 0 141px;
+    padding-bottom: 140px;
   }
 
   @include onDesktop {
-    padding: 70px 0 194px;
+    padding-bottom: 164px;
+  }
+
+  &__container {
+    @extend %container;
   }
 
   &__content {
@@ -34,155 +37,155 @@
       align-items: center;
     }
   }
-}
 
-.trial__about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  &__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 
-  @include onTablet768 {
-    align-items: flex-start;
-    min-width: 430px;
+    @include onTablet768 {
+      align-items: flex-start;
+      min-width: 430px;
+    }
+
+    @include onTablet990 {
+      min-width: 465px;
+    }
+
+    @include onLaptop {
+      min-width: 530px;
+    }
+
+    @include onDesktop {
+      min-width: 715px;
+    }
   }
 
-  @include onTablet990 {
-    min-width: 465px;
-  }
-
-  @include onLaptop {
-    min-width: 530px;
-  }
-
-  @include onDesktop {
-    min-width: 715px;
-  }
-}
-
-.trial__title {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 120%;
-  margin: 0;
-  color: #fff;
-
-  @include onTablet768 {
-    font-size: 32px;
-    text-align: left;
-    margin-bottom: 24px;
-  }
-
-  @include onTablet990 {
-    font-size: 38px;
-    margin-bottom: 32px;
-  }
-
-  @include onLaptop {
-    font-size: 42px;
-  }
-
-  @include onDesktop {
-    font-size: 56px;
-    margin-bottom: 50px;
-  }
-}
-
-.trial__image {
-  display: block;
-  width: 100%;
-  height: 100%;
-
-  @include onTablet768 {
-    display: none;
-  }
-}
-
-.trial__large-image {
-  display: none;
-  position: absolute;
-  left: 55%;
-
-  @include onTablet768 {
-    display: block;
-    width: 60%;
-  }
-
-  @include onTablet990 {
-    width: 50%;
-  }
-
-  @include onLaptop {
-    left: 50%;
-  }
-
-  @include onDesktop {
-    left: 50%;
-    width: 63%;
-  }
-}
-
-.trial__text {
-  text-align: center;
-  width: 100%;
-  opacity: $default-opacity;
-  margin-bottom: 32px;
-  color: #fff;
-  max-width: 340px;
-
-  @include onTablet768 {
-    font-size: 17px;
-    text-align: left;
-    margin-bottom: 34px;
-    max-width: 400px;
-  }
-
-  @include onLaptop {
-    font-size: 20px;
-    margin-bottom: 56px;
-    position: static;
-  }
-
-  @include onDesktop {
-    font-size: 26px;
-    margin-bottom: 70px;
-    max-width: 730px;
-  }
-}
-
-.trial__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  font-size: 17px;
-  padding: 16px 24px;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #fc3232;
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: all $default-transition ease-in-out;
-
-  &:hover {
-    background-color: transparent;
-    border: 2px solid #fc3232;
-    box-shadow: 1px 4px 16px 0 rgba(241, 53, 56, 0.64);
-  }
-
-  @include onTablet768 {
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
     margin: 0;
-    max-width: fit-content;
+    color: $white;
+
+    @include onTablet768 {
+      font-size: 32px;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+
+    @include onTablet990 {
+      font-size: 38px;
+      margin-bottom: 32px;
+    }
+
+    @include onLaptop {
+      font-size: 42px;
+    }
+
+    @include onDesktop {
+      font-size: 56px;
+      margin-bottom: 50px;
+    }
   }
 
-  @include onLaptop {
-    font-size: 20px;
-    padding: 18px 32px;
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    @include onTablet768 {
+      display: none;
+    }
   }
 
-  @include onDesktop {
-    font-size: 26px;
-    padding: 24px 40px;
+  &__large-image {
+    display: none;
+    position: absolute;
+    left: 55%;
+
+    @include onTablet768 {
+      display: block;
+      width: 60%;
+    }
+
+    @include onTablet990 {
+      width: 50%;
+    }
+
+    @include onLaptop {
+      left: 50%;
+    }
+
+    @include onDesktop {
+      left: 50%;
+      width: 63%;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    width: 100%;
+    opacity: $default-opacity;
+    margin-bottom: 32px;
+    color: $white;
+    max-width: 340px;
+
+    @include onTablet768 {
+      font-size: 17px;
+      text-align: left;
+      margin-bottom: 34px;
+      max-width: 400px;
+    }
+
+    @include onLaptop {
+      font-size: 20px;
+      margin-bottom: 56px;
+      position: static;
+    }
+
+    @include onDesktop {
+      font-size: 26px;
+      margin-bottom: 70px;
+      max-width: 730px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    padding: 16px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: $white;
+    background-color: $primary-red;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all $default-transition ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid $primary-red;
+      box-shadow: 1px 4px 16px 0 rgba(241, 53, 56, 0.64);
+    }
+
+    @include onTablet768 {
+      margin: 0;
+      max-width: fit-content;
+    }
+
+    @include onLaptop {
+      font-size: 20px;
+      padding: 18px 32px;
+    }
+
+    @include onDesktop {
+      font-size: 26px;
+      padding: 24px 40px;
+    }
   }
 }

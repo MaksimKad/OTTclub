@@ -1,8 +1,10 @@
 .page {
   overflow-x: hidden;
+  scroll-behavior: smooth;
+
   &__body {
     background-image: url("../images/background/375.jpg");
-    background-size: 100%;
+    background-size: 100vw 100%;
     background-repeat: no-repeat;
     background-position: top;
     overflow-x: hidden;
@@ -15,13 +17,13 @@
 
     @include onTablet990 {
       background-image: url("../images/background/990.jpg");
-      background-size: 110%;
+      background-size: 100vw 100%;
       padding: 0 23px;
     }
 
     @include onLaptop {
       background-image: url("../images/background/1440.jpg");
-      background-size: 100%;
+      background-size: 100vw 100%;
       padding: 0 23px;
     }
 
